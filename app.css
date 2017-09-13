@@ -59,7 +59,7 @@
 }
 .subbar h3{
 	font-size: 19px;
-	margin:0; 
+	margin: 0; 
 	padding: 0px 7px;
 }
 .subbar .webix_el_button{
@@ -69,13 +69,26 @@
 	font-size: 12px;
 }
 .subbar .webix_icon_btn {
-	font-size:12px;  
+	font-size: 12px;  
 }
 
 /*Menu area*/
 .menuarea {
-	background: #eee;
+	background: #e2e4e6;
 	color: #666;
+}
+.menuarea .webix_view{
+	background: #e2e4e6;
+	color: #444;
+}
+.menuarea .webix_el_label{
+	text-align: center;
+}
+  .menuarea .webix_el_label div{
+	font-size: 16px;
+}
+.menuarea button{
+	text-align: center;
 }
 
 /*Kanban area*/
@@ -96,6 +109,7 @@
 	padding: 0px 7px 7px 7px;
 }
 
+/* dev helpers */
 .draft .webix_template{
 	display: table;
 	width: 100%;

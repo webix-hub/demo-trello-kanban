@@ -15,7 +15,12 @@ var subbar = {
 		{ view:"button", type:"icon", icon:"star-o", width: 28 },
 		{ view:"button", type:"icon", icon:"briefcase", label:" Private", width:72 },
 		{},
-		{ view:"button", type:"icon", icon:"ellipsis-h", label:" Show menu", width:100 }
+		{ view:"button", type:"icon", icon:"ellipsis-h",
+			label:" Show menu", id:"show-btn", width:100, click:function(){
+				$$("sidemenu").show();
+				this.hide();
+			} 
+		}
 	]
 };
 
@@ -40,7 +45,16 @@ var boards = {
 };
 
 var menu = {
-	css:"draft menuarea", template:"<span class='title'>Menu</span>", width: 340
+	width: 340, css:"menuarea", id:"sidemenu", hidden:true, type:"head", rows:[
+		{ cols:[
+			{ label:"Menu", view:"label" },
+			{ view:"button", type:"icon", icon:"close", width: 30, click:function(){
+				$$("sidemenu").hide();
+				$$("show-btn").show();
+			}}
+		]},
+		{ css:"draft", template:"<span class='title'>Menu Content</span>" }	
+	]
 };
 
 webix.ready(function(){
@@ -49,7 +63,7 @@ webix.ready(function(){
 		type:"clean", rows:[
 		  toolbar,
 		  { type:"clean", cols:[
-		    { type:"clean", rows:[ subbar, boards]},
+			{ type:"clean", rows:[ subbar, boards]},
 			menu
 		  ]}
 		]
