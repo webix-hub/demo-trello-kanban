@@ -1,3 +1,60 @@
+.body, .webix_view{
+	background: #0079bf;
+	color: #f3f3f3;
+}
+
+/*Top toolbar*/
+.webix_layout_toolbar.topbar{
+	background: #026AA7;
+}
+.webix_layout_toolbar.topbar button{
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+    background: linear-gradient(rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0.2) 100%);
+}
+.webix_layout_toolbar.topbar button:hover{
+	background: linear-gradient(to bottom,rgba(255,255,255,0.4) 0,rgba(255,255,255,0.3) 100%);
+}
+.webix_layout_toolbar.topbar button:active{
+    background: linear-gradient(to bottom,rgba(255,255,255,0.45) 0,rgba(255,255,255,0.35) 100%);
+}
+.webix_layout_toolbar.topbar .webix_icon_btn{
+	line-height:32px;
+}
+.webix_layout_toolbar.topbar .webix_el_search input {
+	background: rgba(255,255,255,0.3);
+	border:none;
+	border-radius:3px;
+}
+.webix_layout_toolbar.topbar .webix_el_search input:focus {
+	background: white;
+}
+.webix_layout_toolbar.topbar .webix_el_search .webix_el_box {
+	background-color:#026AA7;
+}
+.webix_layout_toolbar.topbar .webix_el_search .webix_input_icon {
+	color:#fff;
+}
+.webix_layout_toolbar.topbar .webix_el_label {
+	background: transparent;
+	text-align: center;
+	font-weight: bold;
+}
+.webix_layout_toolbar.topbar .webix_el_label a{
+	color: #7fb3d1;
+	text-decoration: none;
+}
+.webix_layout_toolbar.topbar .webix_el_label a:hover{
+	color: white;
+}
+
+/*Menu area*/
+.menuarea {
+	background: #eee;
+	color: #444;
+}
+
 .draft .webix_template{
 	display: table;
 	width: 100%;
