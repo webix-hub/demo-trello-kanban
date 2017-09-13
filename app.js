@@ -11,15 +11,32 @@ var toolbar = {
 };
 var subbar = {
 	css:"subbar", padding:1, view:"toolbar", height:40, cols:[
-	  { view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
-	  { view:"button", type:"icon", icon:"star-o", width: 28 },
-	  { view:"button", type:"icon", icon:"briefcase", label:" Private", width:72 },
-	  {},
-	  { view:"button", type:"icon", icon:"ellipsis-h", label:" Show menu", width:100 }
+		{ view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
+		{ view:"button", type:"icon", icon:"star-o", width: 28 },
+		{ view:"button", type:"icon", icon:"briefcase", label:" Private", width:72 },
+		{},
+		{ view:"button", type:"icon", icon:"ellipsis-h", label:" Show menu", width:100 }
 	]
 };
+
+function getList(id, header){
+	return { 
+		borderless:true, headerHeight:30, header:header,
+		body:{
+			view:"kanbanlist", width:300, status:id
+		}
+	};
+}
+
 var boards = {
-	css:"draft", template:"<span class='title'>Boards</span>"
+	view:"scrollview", scroll:"x", body:{
+		view:"kanban", css:"kanbanarea", type:"space", cols:[
+			getList("new", "Backlog"),
+			getList("work", "In Progress"),
+			getList("test", "Testing"),
+			getList("done", "Done")
+		], url:"data.json"
+	}
 };
 
 var menu = {
@@ -27,12 +44,13 @@ var menu = {
 };
 
 webix.ready(function(){
+	webix.CustomScroll.init();
 	webix.ui({
 		type:"clean", rows:[
 		  toolbar,
 		  { type:"clean", cols:[
-			  { type:"clean", rows:[ subbar, boards]},
-			  menu
+		    { type:"clean", rows:[ subbar, boards]},
+			menu
 		  ]}
 		]
 	});

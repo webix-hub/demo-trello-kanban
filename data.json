@@ -1,0 +1,90 @@
+[{
+	"id": 1,
+	"status": "new",
+	"text": "Printing in PDF Viewer",
+	"tags": "webix,docs"
+}, {
+	"id": 2,
+	"status": "work",
+	"text": "Google map: Possibility to draw data based on data item type",
+	"color": "red",
+	"tags": "webix"
+}, {
+	"id": 3,
+	"status": "done",
+	"text": "selectAll feature for multicombo/multiselect controls",
+	"tags": "webix,docs"
+}, {
+	"id": 4,
+	"status": "test",
+	"text": "Sparkline color as a function",
+	"color":"violet",
+	"tags": "webix 5.0"
+}, {
+	"id": 5,
+	"status": "new",
+	"text": "Empty values for layout collectons",
+	"tags": "webix,docs",
+	"votes": 3
+}, {
+	"id": 6,
+	"status": "new",
+	"text": "Nested column groups",
+	"color":"pink",
+	"tags": "webix,kanban"
+}, {
+	"id": 7,
+	"status": "work",
+	"text": "Advanced Math in DataTable",
+	"tags": "webix"
+}, {
+	"id": 8,
+	"status": "done",
+	"text": "Expandable list",
+	"tags": "webix"
+}, {
+	"id": 9,
+	"status": "work",
+	"text": "Spring skin design for Calendar",
+	"tags": "webix"
+}, {
+	"id": 10,
+	"status": "test",
+	"text": "Improve Ticket System",
+	"tags": "webix"
+}, {
+	"id": 11,
+	"status": "done",
+	"text": "On-Premise Data Storage",
+	"tags": "webix 2.5"
+}, {
+	"id": 12,
+	"status": "test",
+	"text": "CSV Export",
+	"votes": 2
+}, {
+	"id": 13,
+	"status": "done",
+	"text": "Sales and Marketing reports",
+	"color":"orange"
+},{
+	"id": 14,
+	"status": "new",
+	"text": "Pilot Discussion Boards",
+	"tags": "webix"
+},{
+	"id": 15,
+	"status": "work",
+	"text": "Design Common Templates",
+	"tags": "webix,docs"
+},{
+	"id": 16,
+	"status": "work",
+	"text": "Third-Party Blog Posts",
+	"tags": "webix,articles"
+},{
+	"id": 17,
+	"status": "test",
+	"text": "Test Configurations",
+	"tags": "webix,articles"
+}]

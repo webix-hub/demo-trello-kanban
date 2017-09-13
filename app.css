@@ -75,7 +75,25 @@
 /*Menu area*/
 .menuarea {
 	background: #eee;
+	color: #666;
+}
+
+/*Kanban area*/
+.kanbanarea .webix_view{
 	color: #444;
+}
+.kanbanarea .webix_accordionitem_header{
+	background: #e2e4e6;
+	color: #444;
+	line-height: 32px;
+	border-bottom-color: transparent;
+}
+.kanbanarea .webix_accordionitem_header .webix_accordionitem_button{
+	color: #444;
+}
+.webix_kanban_list_item{
+	background: #e2e4e6;
+	padding: 0px 7px 7px 7px;
 }
 
 .draft .webix_template{
