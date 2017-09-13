@@ -11,13 +11,13 @@
 	color: #fff;
 	text-align: center;
 	border-radius: 3px;
-    background: linear-gradient(rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0.2) 100%);
-}
-.webix_layout_toolbar.topbar button:hover{
+	background: linear-gradient(rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0.2) 100%);
+} 
+.webix_layout_toolbar.webix_toolbar.topbar button:hover{
 	background: linear-gradient(to bottom,rgba(255,255,255,0.4) 0,rgba(255,255,255,0.3) 100%);
 }
-.webix_layout_toolbar.topbar button:active{
-    background: linear-gradient(to bottom,rgba(255,255,255,0.45) 0,rgba(255,255,255,0.35) 100%);
+.webix_layout_toolbar.webix_toolbar.topbar button:active{
+	background: linear-gradient(to bottom,rgba(255,255,255,0.45) 0,rgba(255,255,255,0.35) 100%);
 }
 .webix_layout_toolbar.topbar .webix_icon_btn{
 	line-height:32px;
@@ -47,6 +47,29 @@
 }
 .webix_layout_toolbar.topbar .webix_el_label a:hover{
 	color: white;
+}
+
+/*Subbar area*/
+.webix_layout_toolbar.subbar{
+	background: transparent;
+}
+.webix_layout_toolbar.webix_toolbar.subbar button:hover{
+	background: #026AA7;
+	border-radius: 3px;
+}
+.subbar h3{
+	font-size: 19px;
+	margin:0; 
+	padding: 0px 7px;
+}
+.subbar .webix_el_button{
+	background: transparent;
+}
+.subbar .webix_el_button button {
+	font-size: 12px;
+}
+.subbar .webix_icon_btn {
+	font-size:12px;  
 }
 
 /*Menu area*/

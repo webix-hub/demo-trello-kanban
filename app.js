@@ -10,7 +10,13 @@ var toolbar = {
 	]
 };
 var subbar = {
-	css:"draft", template:"<span class='title'>Subbar</span>", height: 40
+	css:"subbar", padding:1, view:"toolbar", height:40, cols:[
+	  { view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
+	  { view:"button", type:"icon", icon:"star-o", width: 28 },
+	  { view:"button", type:"icon", icon:"briefcase", label:" Private", width:72 },
+	  {},
+	  { view:"button", type:"icon", icon:"ellipsis-h", label:" Show menu", width:100 }
+	]
 };
 var boards = {
 	css:"draft", template:"<span class='title'>Boards</span>"
