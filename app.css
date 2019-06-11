@@ -62,19 +62,24 @@
 	background: #026AA7;
 	border-radius: 3px;
 }
-.subbar h3{
+.subbar .webix_el_label h3{
 	font-size: 19px;
-	margin:0; 
+	margin:0;
 	padding: 0px 7px;
+	color: white;
 }
-.subbar .webix_el_button{
+.subbar.webix_layout_toolbar button{
 	background: transparent;
+	color: white;
+}
+.subbar.webix_layout_toolbar button .webix_icon_btn{
+	color: white;
 }
 .subbar .webix_el_button button {
 	font-size: 12px;
 }
 .subbar .webix_icon_btn {
-	font-size:12px;  
+	font-size:12px;
 }
 
 /*Menu area*/

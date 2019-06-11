@@ -12,10 +12,10 @@ var toolbar = {
 var subbar = {
 	css:"subbar", padding:1, view:"toolbar", height:40, cols:[
 	  { view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
-	  { view:"button", type:"icon", icon:"star-o", width: 28 },
-	  { view:"button", type:"icon", icon:"briefcase", label:" Private", width:72 },
+	  { view:"button", type:"icon", icon:"far fa-star", width: 28 },
+	  { view:"button", type:"icon", icon:"fas fa-briefcase", label:" Private", width:72 },
 	  {},
-	  { view:"button", type:"icon", icon:"ellipsis-h", label:" Show menu", width:100 }
+	  { view:"button", type:"icon", icon:"fas fa-ellipsis-h", label:" Show menu", width:100 }
 	]
 };
 var boards = {
