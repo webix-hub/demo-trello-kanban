@@ -8,19 +8,24 @@
 	background: #026AA7;
 }
 .webix_layout_toolbar.topbar button{
-	color: #fff;
 	text-align: center;
 	border-radius: 3px;
+}
+.webix_layout_toolbar.topbar button,
+.webix_layout_toolbar.topbar button .webix_icon_btn{
+	color: #fff;
+}
+.webix_layout_toolbar.topbar button,
+.webix_layout_toolbar.topbar button .webix_icon_btn span{
 	background: linear-gradient(rgba(255, 255, 255, 0.3) 0px, rgba(255, 255, 255, 0.2) 100%);
-} 
-.webix_layout_toolbar.webix_toolbar.topbar button:hover{
+}
+.webix_layout_toolbar.topbar button:hover,
+.webix_layout_toolbar.topbar button .webix_icon_btn span:hover{
 	background: linear-gradient(to bottom,rgba(255,255,255,0.4) 0,rgba(255,255,255,0.3) 100%);
 }
-.webix_layout_toolbar.webix_toolbar.topbar button:active{
-	background: linear-gradient(to bottom,rgba(255,255,255,0.45) 0,rgba(255,255,255,0.35) 100%);
-}
-.webix_layout_toolbar.topbar .webix_icon_btn{
-	line-height:32px;
+.webix_layout_toolbar.topbar button:focus,
+.webix_layout_toolbar.topbar button .webix_icon_btn span:focus{
+    background: linear-gradient(to bottom,rgba(255,255,255,0.45) 0,rgba(255,255,255,0.35) 100%);
 }
 .webix_layout_toolbar.topbar .webix_el_search input {
 	background: rgba(255,255,255,0.3);
@@ -57,19 +62,24 @@
 	background: #026AA7;
 	border-radius: 3px;
 }
-.subbar h3{
+.subbar .webix_el_label h3{
 	font-size: 19px;
-	margin:0; 
+	margin:0;
 	padding: 0px 7px;
+	color: white;
 }
-.subbar .webix_el_button{
+.subbar.webix_layout_toolbar button{
 	background: transparent;
+	color: white;
+}
+.subbar.webix_layout_toolbar button .webix_icon_btn{
+	color: white;
 }
 .subbar .webix_el_button button {
 	font-size: 12px;
 }
 .subbar .webix_icon_btn {
-	font-size:12px;  
+	font-size:12px;
 }
 
 /*Menu area*/
