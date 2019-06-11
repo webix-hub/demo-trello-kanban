@@ -58,8 +58,9 @@
 .webix_layout_toolbar.subbar{
 	background: transparent;
 }
-.webix_layout_toolbar.webix_toolbar.subbar button:hover{
-	background: #026AA7;
+.webix_layout_toolbar.webix_toolbar.subbar button:hover,
+.webix_layout_toolbar.webix_toolbar.subbar button:focus{
+	background: rgb(2, 99, 155);
 	border-radius: 3px;
 }
 .subbar .webix_el_label h3{
@@ -94,11 +95,16 @@
 .menuarea .webix_el_label{
 	text-align: center;
 }
-  .menuarea .webix_el_label div{
+.menuarea .webix_el_label div{
 	font-size: 16px;
 }
 .menuarea button{
 	text-align: center;
+}
+.menuarea .webix_el_button.webix_secondary button > span,
+.menuarea .webix_el_button.webix_secondary button{
+	color: #666;
+	background: #e2e4e6;
 }
 
 /*Kanban area*/

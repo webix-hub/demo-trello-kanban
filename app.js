@@ -11,11 +11,17 @@ var toolbar = {
 };
 var subbar = {
 	css:"subbar", padding:1, view:"toolbar", height:40, cols:[
-	  { view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
-	  { view:"button", type:"icon", icon:"far fa-star", width: 28 },
-	  { view:"button", type:"icon", icon:"fas fa-briefcase", label:" Private", width:72 },
-	  {},
-	  { view:"button", type:"icon", icon:"fas fa-ellipsis-h", label:" Show menu", width:100 }
+		{ view:"label", label:"<h3>App Roadmap</h3>", width: 150 },
+		{ view:"button", type:"icon", icon:"far fa-star", width: 28 },
+		{ view:"button", type:"icon", icon:"fas fa-briefcase", label:" Private", width:72 },
+		{},
+		{
+			view:"button", id:"show-btn", type:"icon", icon:"fas fa-ellipsis-h",
+			label:" Show menu", width:100, click:function(){
+				$$("sidemenu").show();
+				this.hide();
+			}
+		}
 	]
 };
 
@@ -43,12 +49,12 @@ var menu = {
 	width: 340, css:"menuarea", id:"sidemenu", hidden:true, type:"head", rows:[
 		{ cols:[
 			{ label:"Menu", view:"label" },
-			{ view:"button", type:"icon", icon:"close", width: 30, click:function(){
+			{ view:"button", type:"icon", icon:"fas fa-times", width: 30, click:function(){
 				$$("sidemenu").hide();
 				$$("show-btn").show();
 			}}
 		]},
-		{ css:"draft", template:"<span class='title'>Menu Content</span>" }	
+		{ css:"draft", template:"<span class='title'>Menu Content</span>" }
 	]
 };
 
