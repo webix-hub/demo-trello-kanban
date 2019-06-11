@@ -20,7 +20,7 @@ var subbar = {
 };
 
 function getList(id, header){
-	return { 
+	return {
 		borderless:true, headerHeight:30, header:header,
 		body:{
 			view:"kanbanlist", width:300, status:id
